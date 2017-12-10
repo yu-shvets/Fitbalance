@@ -1,0 +1,68 @@
+.top-banner {
+  width: 100%;
+  min-height: 540px;
+  background: $clr_dark_blue url(../img/bg/index-banner.jpg) center center no-repeat;
+  background-size:cover;
+  text-align: center;
+  color: $clr_white;
+  padding-top: 75px;
+  position: relative;
+  &__enter-btn {
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    width: 90px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    border: 1px solid $clr_white;
+    padding-left: 33px;
+    background-image: url(../img/icons/person.png);
+    background-repeat: no-repeat;
+    background-position: 12px center;
+    background-color: transparent;
+    color: inherit;
+    border-radius: 19px;
+    cursor: pointer;
+    @include clearfix();
+  }
+  &__logo {
+    width: 100%;
+    max-width: 385px;
+  }
+  &__title {
+    font-size: 50px;
+  }
+  &__promo {
+    font: 18px PFDintextpro-Medium, sans-serif;
+    text-transform: uppercase;
+    &-numb {
+      font: 50px PFDinTextCompPro-Light, sans-serif;
+      position: relative;
+      top: 7px;
+    }
+    &-perc {
+      font: 24px PFDinTextCompPro-Light, sans-serif;
+    }
+  }
+  &__btn {
+    border-radius: 26px;
+    background-color: $clr_red;
+    border: 2px solid $clr_red;
+    font-size: 24px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 180px;
+    line-height: 50px;
+    display: inline-block;
+    color: $clr_white;
+    cursor: pointer;
+    font-family: inherit;
+    margin-top: 25px;
+    transition: all 0.5s ease;
+    &:hover {
+      background-color: transparent;
+      border: 2px solid $clr_white;
+    }
+  }
+}

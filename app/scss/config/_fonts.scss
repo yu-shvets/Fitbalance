@@ -1,0 +1,64 @@
+$fnt-line: 20px;
+$fnt-weight-regular: 300;
+$fnt-weight-light: 100;
+$fnt-weight-medium: 500;
+$fnt-weight-bold: 700;
+$fnt-weight-black: 900;
+
+$path: '../fonts/PFDinTextCompPro-Light';
+
+@font-face {
+  font-family: PFDinTextCompPro-Light;
+  src: url('#{$path}.eot');
+  src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg#MuseoSansLight') format('svg');
+  font-weight: $fnt-weight-bold;
+  font-style: normal;
+}
+
+
+$path: '../fonts/PFDinTextPro-Light';
+
+@font-face {
+  font-family: PFDinTextPro-Light;
+  src: url('#{$path}.eot');
+  src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg#MuseoSansLight') format('svg');
+  font-weight: $fnt-weight-regular;
+  font-style: normal;
+}
+
+
+$path: '../fonts/PFDinTextPro-Regular';
+
+@font-face {
+  font-family: PFDinTextPro-Regular;
+  src: url('#{$path}.eot');
+  src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg#MuseoSansLight') format('svg');
+  font-weight: $fnt-weight-bold;
+  font-style: normal;
+}
+
+$path: '../fonts/PFDinTextPro-Medium';
+
+@font-face {
+  font-family: PFDinTextPro-Medium;
+  src: url('#{$path}.eot');
+  src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg#MuseoSansLight') format('svg');
+  font-weight: $fnt-weight-medium;
+  font-style: normal;
+}
+
+$path: '../fonts/Ubuntu-Light';
+
+@font-face {
+  font-family: Ubuntu-Light;
+  src: url('#{$path}.eot');
+  src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg#MuseoSansLight') format('svg');
+  font-weight: $fnt-weight-medium;
+  font-style: normal;
+}
+
+
+
+
+
+

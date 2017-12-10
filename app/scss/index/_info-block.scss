@@ -1,0 +1,13 @@
+.info-block {
+  font-size: 18px;
+  color: $clr_white;
+  padding: 40px 0;
+  background-color: $clr_grey;
+  &__text {
+    max-width: 1050px;
+    padding: 0 15px;
+    margin: 0 auto;
+    color: $clr_white;
+    line-height: 24px;
+  }
+}
