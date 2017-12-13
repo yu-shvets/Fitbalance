@@ -1,0 +1,32 @@
+.header {
+  height: 80px;
+  background-color: $clr_grey_bright;
+  width: 100%;
+  text-align: center;
+  &__container {
+    width: 1330px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  &__logo {
+    position: absolute;
+    left: 0;
+  }
+  &__right {
+    position: absolute;
+    right: 0;
+    top: 17px;
+  }
+  &__menu {
+    display: inline-block;
+  }
+}
+.menu {
+  &__list-item {
+    font-size: 20px;
+    color: $clr_light_grey;
+    a {
+      color: inherit;
+    }
+  }
+}
