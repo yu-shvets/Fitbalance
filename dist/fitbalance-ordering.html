@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Delivery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    </head>
+    <body>
+    <header class="header header-main ">
+        <div class="header__container">
+            <a href="" class="header__logo">
+                <img src="img/fitbalance-logo.png" alt="">
+            </a>
+            <div class="header__humburger-container">
+                <a id="hamburger" class="hamburger">
+                    <span class="hamburger__bars"></span>
+                    <span class="hamburger__bars"></span>
+                    <span class="hamburger__bars"></span>
+                </a>
+            </div>
+            <nav id="menu" class="header__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a href="">Продукты</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="">О нас</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="">Бонусы</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="">Доставка</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <button class="header__enter-btn header__enter-btn--mobile">Войти</button>
+                    </li>
+                </ul>
+            </nav>
+    
+            <div class="header__right">
+                <button class="enter header__enter-btn enter header__enter-btn--desktop">Войти</button>
+                <div class="header__basket">22</div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="ordering container">
+            <div class="ordering__form form">
+                <h2 class="title ordering__form-title ">Оформление заказа</h2>
+                <form class="form" action="">
+                    <div class="form__list">
+                        <h3 class="form__sub-title">Личные данные</h3>
+                        <div class="form__row">
+                            <label class="form__row-title" for="name">Имя</label>
+                            <input class="form__row-field" id="name" name="name" type="text" placeholder="Ваше имя">
+                        </div>
+                        <div class="form__row">
+                            <label class="form__row-title" for="surname">Фамилия</label>
+                            <input class="form__row-field" id="surname" name="Surname" type="text"
+                                   placeholder="Ваша фамилия">
+                        </div>
+                        <div class="form__row">
+                            <label class="form__row-title" for="phone">Телефон</label>
+                            <input class="form__row-field" id="phone" name="Name" type="text"
+                                   placeholder="+38 (123) 456 78 90">
+                        </div>
+                    </div>
+                    <div class="form__list">
+                        <h3 class="form__sub-title">Доставка</h3>
+                        <div class="form__row">
+                            <label class="form__row-title" for="region">Регион</label>
+                            <input class="form__row-field" id="region" name="region" type="text"
+                                   placeholder="Выберите регион">
+                        </div>
+                        <div class="form__row">
+                            <label class="form__row-title" for="city">Город</label>
+                            <input class="form__row-field" id="city" name="Surname" type="text"
+                                   placeholder="Выберите город">
+                        </div>
+                        <div class="form__row">
+                            <label class="form__row-title" for="stock">Склад</label>
+                            <input class="form__row-field" id="stock" name="Name" type="text" placeholder="Выберите склад">
+                        </div>
+                    </div>
+                    <div class="form__list">
+                        <h3 class="form__sub-title">Оплата</h3>
+                        <input class="form__payment-value" id="cash" type="radio" name="color-value" value="red"
+                               checked><label
+                            class="form__payment" for="cash"> Оплата при доставке </label>
+                        <input class="form__payment-value" id="cart" type="radio" name="color-value" value="black"><label
+                            class="form__payment" for="cart">Оплата картами VISA и MasterCard (Приват24, LiqPay, Терминал и
+                        др.)</label>
+                        <input class="form__payment-value" id="privat" type="radio" name="color-value" value="brawn"><label
+                            class="form__payment" for="privat"> Через систему Приват24 </label>
+                    </div>
+                    <button class="form__btn-submit" type="submit">Oформить заказ</button>
+                </form>
+            </div>
+            <div class="ordering__list list">
+                <div class="list__container">
+                    <h4 class="list__title">Вы заказали</h4>
+                    <ul>
+                        <li class="list__item">
+                            <div class="list__item-name">
+                                Белковый коктейль
+                                FitBalance шоколад
+                                -ваниль (375 г) x4
+                            </div>
+                            <div class="list__item-price">
+                                139 грн
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="list__item-name">
+                                Белковый коктейль
+                                FitBalance шоколад
+                                -ваниль (375 г) x4
+                            </div>
+                            <div class="list__item-price">
+                                139 грн
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="list__total-title">Итого</div>
+                    <div class="list__total-sum">539 <sub> грн </sub></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer footer--brighter">
+    <div class="footer__container">
+        <div class="footer__top">
+            <div class="footer__top-item footer__top-item--aside">
+                <h3 class="footer__top-header">Пан томатов</h3>
+                <ul class="footer__top-list">
+                    <li class="footer__top-list-item">
+                        <a href="#">Продукты</a>
+                    </li>
+                    <li class="footer__top-list-item">
+                        <a href="#">О нас</a>
+                    </li>
+                    <li class="footer__top-list-item">
+                        <a href="#">Бонусы</a>
+                    </li>
+                    <li class="footer__top-list-item">
+                        <a href="#">Доставка</a>
+                    </li>
+                </ul>
+                <ul class="footer__top-phones">
+                    <li class="footer__top-phones-item">
+                        <a href="tel:+380442214037"> +38 (044) 221-40-37</a>
+                    </li>
+                    <li class="footer__top-phones-item">
+                        <a href="tel:+380671097973"> +38 (067) 109-79-73 </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__top-item footer__top-item--center">
+                <h3 class="footer__top-header">FitBalance</h3>
+                <ul class="footer__top-list">
+                    <li class="footer__top-list-item">
+                        <a href="#">Продукты</a>
+                    </li>
+                    <li class="footer__top-list-item">
+                        <a href="#">О нас</a>
+                    </li>
+                    <li class="footer__top-list-item">
+                        <a href="#">Бонусы</a>
+                    </li>
+                    <li class="footer__top-list-item">
+                        <a href="#">Доставка</a>
+                    </li>
+                </ul>
+                <ul class="footer__top-phones">
+                    <li class="footer__top-phones-item">
+                        <a href="tel:+380442214037"> +38 (044) 221-40-37</a>
+                    </li>
+                    <li class="footer__top-phones-item">
+                        <a href="tel:+380671097973"> +38 (067) 109-79-73 </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__top-item footer__top-item--aside">
+                <h3 class="footer__top-header">Monastic Карапаты</h3>
+                <ul class="footer__top-list">
+                    <li class="footer__top-list-item">
+                        <a href="#">Шале</a>
+                    </li>
+                    <li class="footer__top-list-item">
+                        <a href="#">СПА меню</a>
+                    </li>
+                    <li class="footer__top-list-item">
+                        <a href="#">Развлечения</a>
+                    </li>
+                    <li class="footer__top-list-item">
+                        <a href="#">Ресторан </a>
+                    </li>
+                    <li class="footer__top-list-item">
+                        <a href="#">Контакты </a>
+                    </li>
+                </ul>
+                <ul class="footer__top-phones">
+                    <li class="footer__top-phones-item">
+                        <a href="tel:+380442214037"> +38 (044) 221-40-37</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            Monastic 2017
+        </div>
+    </div>
+    </footer>
+    
+    <script src="js/js.min.js"></script>
+    </body>
+    </html>
+    

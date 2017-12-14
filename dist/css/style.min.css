@@ -74,9 +74,9 @@ table {
   font-style: normal; }
 
 @font-face {
-  font-family: PFDinTextPro-Medium;
-  src: url("../fonts/PFDinTextPro-Medium.eot");
-  src: url("../fonts/PFDinTextPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinTextPro-Medium.woff") format("woff"), url("../fonts/PFDinTextPro-Medium.ttf") format("truetype"), url("../fonts/PFDinTextPro-Medium.svg#MuseoSansLight") format("svg");
+  font-family: PFDinTextPro-Bold;
+  src: url("../fonts/PFDinTextPro-Bold.eot");
+  src: url("../fonts/PFDinTextPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinTextPro-Bold.woff") format("woff"), url("../fonts/PFDinTextPro-Bold.ttf") format("truetype"), url("../fonts/PFDinTextPro-Bold.svg#MuseoSansLight") format("svg");
   font-weight: 500;
   font-style: normal; }
 
@@ -193,8 +193,8 @@ main {
   .top-banner__btn {
     -webkit-border-radius: 26px;
             border-radius: 26px;
-    background-color: #f24841;
-    border: 2px solid #f24841;
+    background-color: #f049a5;
+    border: 2px solid #f049a5;
     font-size: 24px;
     text-transform: uppercase;
     height: 50px;
@@ -231,7 +231,7 @@ main {
         height: 250px;
         margin-right: 10px; } }
     .products-row-item:hover .products-row-item__btn {
-      background-color: #f24841; }
+      background-color: #f049a5; }
     .products-row-item__text {
       text-align: center;
       font: 20px PFDinTextPro-Regular, sans-serif;
@@ -365,7 +365,7 @@ main {
   height: 40px;
   line-height: 33px;
   display: inline-block;
-  border: 1px solid #f24841;
+  border: 1px solid #f049a5;
   padding-left: 33px;
   background-image: url(../img/icons/person-dark.png);
   background-repeat: no-repeat;
@@ -399,7 +399,7 @@ main {
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease; }
   .menu__list-item:hover {
-    color: #f24841; }
+    color: #f049a5; }
   .menu__list-item:last-child {
     margin-right: 0; }
   .menu__list-item a {
@@ -430,7 +430,7 @@ main {
       transition: transform 0.5s;
       transition: transform 0.5s, -webkit-transform 0.5s; } }
   .hamburger__bars {
-    border-top: 3.5px solid #f24841;
+    border-top: 3.5px solid #f049a5;
     display: block;
     width: 35px;
     -webkit-transition: margin 0.5s, -webkit-transform 0.5s;
@@ -443,7 +443,7 @@ main {
     z-index: 800;
     top: -8px; }
     .hamburger--open .hamburger__bars {
-      border-top: 3px solid #f24841; }
+      border-top: 3px solid #f049a5; }
       .hamburger--open .hamburger__bars:nth-child(1) {
         -webkit-transform: rotate(45deg);
             -ms-transform: rotate(45deg);
@@ -496,7 +496,7 @@ main {
         left: 0;
         height: 0;
         width: 100%;
-        background-color: #f24841;
+        background-color: #f049a5;
         -webkit-transition: all 0.5s ease;
         transition: all 0.5s ease; }
     .product-filter__item--active a::after {
@@ -615,7 +615,7 @@ main {
                 transform: rotate(-90deg); }
       .products-list__item-btn-add {
         width: 67px;
-        background-color: #f24841;
+        background-color: #f049a5;
         background-image: url(../img/icons/libra-plus.png);
         background-position: center center;
         background-repeat: no-repeat;
@@ -636,7 +636,7 @@ main {
           height: auto; } }
       .products-list__item-price-value {
         font: 48px PFDinTextPro-Light, sans-serif;
-        min-height: 65px;
+        height: 65px;
         white-space: nowrap;
         float: left;
         text-indent: 15px;
@@ -737,6 +737,195 @@ main {
     display: block;
     font-size: 40px;
     text-decoration: none; }
+
+.ordering {
+  margin-top: 30px;
+  -webkit-flex-wrap: wrap-reverse;
+      -ms-flex-wrap: wrap-reverse;
+          flex-wrap: wrap-reverse; }
+  .ordering:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media (max-width: 800px) {
+    .ordering {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }
+  .ordering__form {
+    width: 56.3%;
+    float: left;
+    margin-bottom: 30px;
+    border: 1px solid #e1e1e1;
+    padding-bottom: 44px; }
+    @media (max-width: 800px) {
+      .ordering__form {
+        float: none;
+        width: 100%; } }
+    .ordering__form-title {
+      margin-bottom: 10px;
+      display: inline-block;
+      text-align: left;
+      padding-left: 5%; }
+  .ordering__list {
+    float: left;
+    width: 300px;
+    background-color: #f8f8f8;
+    padding: 20px 28px;
+    margin-left: 2.25%; }
+    @media (max-width: 800px) {
+      .ordering__list {
+        float: none;
+        width: 100%;
+        direction: ltr;
+        display: inline-block;
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        margin-left: 0;
+        margin-bottom: 30px; } }
+
+.form__list {
+  padding: 35px 5% 44px;
+  font-size: 20px; }
+  .form__list:nth-child(2) {
+    padding-top: 0; }
+
+.form__sub-title {
+  margin-bottom: 25px;
+  font: 20px PFDinTextPro-Bold, sans-serif;
+  text-transform: uppercase; }
+
+.form__row {
+  height: 72px;
+  margin-bottom: 30px;
+  font: 20px PFDinTextPro-Light, sans-serif; }
+  .form__row-title {
+    width: 25%;
+    display: inline-block; }
+  .form__row-field {
+    border: 1px solid #e1e1e1;
+    display: inline-block;
+    width: 73.5%;
+    height: inherit;
+    text-indent: 20px; }
+    .form__row-field.placeholder {
+      color: #353535;
+      font: 20px PFDinTextPro-Light, sans-serif; }
+    .form__row-field:-moz-placeholder {
+      color: #353535;
+      font: 20px PFDinTextPro-Light, sans-serif; }
+    .form__row-field::-moz-placeholder {
+      color: #353535;
+      font: 20px PFDinTextPro-Light, sans-serif; }
+    .form__row-field:-ms-input-placeholder {
+      color: #353535;
+      font: 20px PFDinTextPro-Light, sans-serif; }
+    .form__row-field::-webkit-input-placeholder {
+      color: #353535;
+      font: 20px PFDinTextPro-Light, sans-serif; }
+
+.form__payment {
+  cursor: pointer;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 3px !important;
+  margin-left: 0;
+  padding-left: 40px;
+  margin-bottom: 20px;
+  width: 100%; }
+  .form__payment::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #e4e4e4;
+    top: -2px;
+    left: -2px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
+  .form__payment::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: #f049a5;
+    top: 2px;
+    left: 2px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
+  .form__payment-value {
+    visibility: hidden;
+    position: absolute; }
+
+.form__btn-submit {
+  display: block;
+  margin: 0 auto;
+  background-color: #f049a5;
+  color: #ffffff;
+  width: 232px;
+  height: 67px;
+  border: none;
+  -webkit-border-radius: 33.5px;
+          border-radius: 33.5px;
+  text-transform: uppercase;
+  font: inherit;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer; }
+  .form__btn-submit:hover {
+    background-color: #e46aae;
+    -webkit-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease; }
+
+.form__payment-value:checked + .form__payment::after {
+  opacity: 1; }
+
+.list {
+  font-size: 30px; }
+  .list__title {
+    font-size: 30px; }
+  .list__container ul {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e8e8e8; }
+  .list__item {
+    font-size: 18px;
+    display: inline-block;
+    white-space: nowrap;
+    margin-bottom: 20px; }
+    .list__item-name {
+      display: inline-block;
+      width: 71%;
+      white-space: normal; }
+    .list__item-price {
+      width: 25.32%;
+      display: inline-block;
+      vertical-align: top;
+      text-align: right; }
+  .list__total-title {
+    font-size: 30px;
+    margin-top: 22px; }
+  .list__total-sum {
+    font-size: 48px; }
+    .list__total-sum sub {
+      font-size: 24px;
+      position: relative;
+      top: -20px; }
 
 .footer {
   min-height: 310px;

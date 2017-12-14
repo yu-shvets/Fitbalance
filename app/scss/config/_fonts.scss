@@ -47,10 +47,10 @@ $path: '../fonts/PFDinTextPro-Medium';
   font-style: normal;
 }
 
-$path: '../fonts/PFDinTextPro-Medium';
+$path: '../fonts/PFDinTextPro-Bold';
 
 @font-face {
-  font-family: PFDinTextPro-Medium;
+  font-family: PFDinTextPro-Bold;
   src: url('#{$path}.eot');
   src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg#MuseoSansLight') format('svg');
   font-weight: $fnt-weight-medium;
@@ -76,6 +76,7 @@ $path: '../fonts/Ubuntu-Light';
   font-weight: $fnt-weight-medium;
   font-style: normal;
 }
+
 
 
 

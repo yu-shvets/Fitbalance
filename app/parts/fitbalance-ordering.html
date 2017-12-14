@@ -1,0 +1,84 @@
+<main>
+    <div class="ordering container">
+        <div class="ordering__form form">
+            <h2 class="title ordering__form-title ">Оформление заказа</h2>
+            <form class="form" action="">
+                <div class="form__list">
+                    <h3 class="form__sub-title">Личные данные</h3>
+                    <div class="form__row">
+                        <label class="form__row-title" for="name">Имя</label>
+                        <input class="form__row-field" id="name" name="name" type="text" placeholder="Ваше имя">
+                    </div>
+                    <div class="form__row">
+                        <label class="form__row-title" for="surname">Фамилия</label>
+                        <input class="form__row-field" id="surname" name="Surname" type="text"
+                               placeholder="Ваша фамилия">
+                    </div>
+                    <div class="form__row">
+                        <label class="form__row-title" for="phone">Телефон</label>
+                        <input class="form__row-field" id="phone" name="Name" type="text"
+                               placeholder="+38 (123) 456 78 90">
+                    </div>
+                </div>
+                <div class="form__list">
+                    <h3 class="form__sub-title">Доставка</h3>
+                    <div class="form__row">
+                        <label class="form__row-title" for="region">Регион</label>
+                        <input class="form__row-field" id="region" name="region" type="text"
+                               placeholder="Выберите регион">
+                    </div>
+                    <div class="form__row">
+                        <label class="form__row-title" for="city">Город</label>
+                        <input class="form__row-field" id="city" name="Surname" type="text"
+                               placeholder="Выберите город">
+                    </div>
+                    <div class="form__row">
+                        <label class="form__row-title" for="stock">Склад</label>
+                        <input class="form__row-field" id="stock" name="Name" type="text" placeholder="Выберите склад">
+                    </div>
+                </div>
+                <div class="form__list">
+                    <h3 class="form__sub-title">Оплата</h3>
+                    <input class="form__payment-value" id="cash" type="radio" name="color-value" value="red"
+                           checked><label
+                        class="form__payment" for="cash"> Оплата при доставке </label>
+                    <input class="form__payment-value" id="cart" type="radio" name="color-value" value="black"><label
+                        class="form__payment" for="cart">Оплата картами VISA и MasterCard (Приват24, LiqPay, Терминал и
+                    др.)</label>
+                    <input class="form__payment-value" id="privat" type="radio" name="color-value" value="brawn"><label
+                        class="form__payment" for="privat"> Через систему Приват24 </label>
+                </div>
+                <button class="form__btn-submit" type="submit">Oформить заказ</button>
+            </form>
+        </div>
+        <div class="ordering__list list">
+            <div class="list__container">
+                <h4 class="list__title">Вы заказали</h4>
+                <ul>
+                    <li class="list__item">
+                        <div class="list__item-name">
+                            Белковый коктейль
+                            FitBalance шоколад
+                            -ваниль (375 г) x4
+                        </div>
+                        <div class="list__item-price">
+                            139 грн
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <div class="list__item-name">
+                            Белковый коктейль
+                            FitBalance шоколад
+                            -ваниль (375 г) x4
+                        </div>
+                        <div class="list__item-price">
+                            139 грн
+                        </div>
+                    </li>
+                </ul>
+                <div class="list__total-title">Итого</div>
+                <div class="list__total-sum">539 <sub> грн </sub></div>
+            </div>
+        </div>
+    </div>
+</main>
