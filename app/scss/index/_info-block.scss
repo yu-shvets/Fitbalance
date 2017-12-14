@@ -9,5 +9,10 @@
     margin: 0 auto;
     color: $clr_white;
     line-height: 24px;
+    &--grey {
+      background-color: $clr_white;
+      color: $clr_light_grey;
+      padding-bottom: 40px;
+    }
   }
 }
