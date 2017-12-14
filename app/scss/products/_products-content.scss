@@ -3,27 +3,43 @@
   line-height: 65px;
   text-align: center;
   border-bottom: 1px solid $clr_grey_brighter;
+  @media (max-width: 800px) {
+    border-bottom: none;
+    height: auto;
+    line-height: 65px;
+  }
   &__item {
     font-size: 32px;
     margin-right: 54px;
     display: inline-block;
     color: $clr_black;
     position: relative;
-    &:hover::after {
+    @media (max-width: 700px) {
+      font-size: 25px;
+    }
+    @media (max-width: 550px) {
+      display: block;
+      margin: 0 auto;
+    }
+    &:hover a::after {
       height: 3px;
     }
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      height: 0;
-      width: 100%;
-      background-color: $clr_red;
-      transition: all 0.5s ease;
-
+    a {
+      display: inline-block;
+      position: relative;
+      text-align: center;
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 0;
+        width: 100%;
+        background-color: $clr_red;
+        transition: all 0.5s ease;
+      }
     }
-    &--active::after  {
+    &--active a::after  {
       height: 3px;
     }
     &:last-child {
@@ -179,6 +195,7 @@
         float: left;
         text-indent: 15px;
         width: calc(100% - 225px);
+        line-height: 75px;
         @media (max-width: 1220px) {
           width: 100%;
         }
