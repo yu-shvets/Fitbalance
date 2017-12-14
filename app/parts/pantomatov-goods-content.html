@@ -1,7 +1,59 @@
 <main>
     <div class="container">
-        <div class="product-filter">
-
+        <ul class="product-filter">
+            <li class="product-filter__item product-filter__item--active">
+                <a href="#">Паста и соусы</a>
+            </li>
+            <li class="product-filter__item">
+                <a href="#">Пюре и смузи</a>
+            </li>
+            <li class="product-filter__item">
+                <a href="#">Соки</a>
+            </li>
+            <li class="product-filter__item">
+                <a href="#">Томаты</a>
+            </li>
+        </ul>
+        <h3 class="title">Паста и соусы</h3>
+        <div class="breadcrumbs-container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="#">Пан томатов</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="#">Продукты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="products-list">
+            <div class="products-list__item">
+                <a class="products-list__item-img" href="#">
+                    <img src="img/temp/item.jpg" alt="">
+                </a>
+                <div class="products-list__item-info">
+                    <a href="" class="products-list__item-name">Паста «Томатная»</a>
+                    <div class="products-list__item-info-packaging products-list__item-info-packaging--libra">0.90 кг
+                    </div>
+                </div>
+                <div class="products-list__item-price">
+                    <div class="products-list__item-price-value">
+                        370 <sup> грн</sup>
+                    </div>
+                    <div class="products-list__item-price-left">
+                        <div class="products-list__item-price-numb">
+                            <form action="">
+                                <button class="btn-plus products-list__item-btn" type="button"></button>
+                                <input type="text" class="products-list__item-quantity" value="1" readonly="readonly">
+                                <button class="btn-minus products-list__item-btn" type="button"></button>
+                            </form>
+                        </div>
+                        <button class="products-list__item-btn-add" type="button"></button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </main>

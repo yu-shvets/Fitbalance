@@ -41,7 +41,7 @@ gulp.task('scss', function() {
 	}).on("error", notify.onError()))
 	.pipe(rename({suffix: '.min', prefix : ''}))
 	.pipe(autoprefixer(['last 15 versions']))
-	.pipe(cleanCSS())
+	// .pipe(cleanCSS())
 	.pipe(gulp.dest('dist/css'))
 	.pipe(browserSync.reload({stream: true}));
 });

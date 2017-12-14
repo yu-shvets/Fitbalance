@@ -1,0 +1,30 @@
+.contacts {
+  &__phone-list {
+    font-size: 40px;
+  }
+  &__address {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 56px;
+    font-family: PFDinTextPro-Light, sans-serif;
+    margin-bottom: 40px;
+    background-image: url(../img/icons/geo-red.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-top: 64px;
+  }
+}
+.phone-list {
+  text-align: center;
+  padding-top: 64px;
+  background-image: url(../img/icons/phone-red.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  &__item {
+    color: inherit;
+    margin-bottom: 7px;
+    display: block;
+    font-size: 40px;
+    text-decoration: none;
+  }
+}

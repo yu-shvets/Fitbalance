@@ -47,6 +47,26 @@ $path: '../fonts/PFDinTextPro-Medium';
   font-style: normal;
 }
 
+$path: '../fonts/PFDinTextPro-Medium';
+
+@font-face {
+  font-family: PFDinTextPro-Medium;
+  src: url('#{$path}.eot');
+  src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg#MuseoSansLight') format('svg');
+  font-weight: $fnt-weight-medium;
+  font-style: normal;
+}
+
+$path: '../fonts/DINPro';
+
+@font-face {
+  font-family: DINPro;
+  src: url('#{$path}.eot');
+  src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg#MuseoSansLight') format('svg');
+  font-weight: $fnt-weight-medium;
+  font-style: normal;
+}
+
 $path: '../fonts/Ubuntu-Light';
 
 @font-face {

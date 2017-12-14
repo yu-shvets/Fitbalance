@@ -1,0 +1,21 @@
+.sub-title--about {
+  margin-bottom: 40px;
+}
+
+.about {
+  &-container {
+    max-width: 1090px;
+    margin: 0 auto;
+    padding: 0 30px;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 50px;
+    font-family: PFDinTextPro-Light, sans-serif;
+    @media screen and (max-width: 90px) {
+      padding: 0 15px;
+    }
+    p {
+      margin-bottom: 30px;
+    }
+  }
+}

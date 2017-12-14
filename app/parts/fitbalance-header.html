@@ -1,11 +1,21 @@
-<header class="header">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<header class="header header-main ">
     <div class="header__container">
         <a href="" class="header__logo">
             <img src="img/fitbalance-logo.png" alt="">
         </a>
-
-        <nav class="header__menu menu">
-            <ul class="menu__list" >
+        <div class="header__humburger-container">
+            <a id="hamburger" class="hamburger">
+                <span class="hamburger__bars"></span>
+                <span class="hamburger__bars"></span>
+                <span class="hamburger__bars"></span>
+            </a>
+        </div>
+        <nav id="menu" class="header__menu menu">
+            <ul class="menu__list">
                 <li class="menu__list-item">
                     <a href="">Продукты</a>
                 </li>
@@ -18,11 +28,14 @@
                 <li class="menu__list-item">
                     <a href="">Доставка</a>
                 </li>
+                <li class="menu__list-item">
+                    <button class="header__enter-btn header__enter-btn--mobile">Войти</button>
+                </li>
             </ul>
         </nav>
 
         <div class="header__right">
-            <button id="enter" class="header__enter-btn">Войти</button>
+            <button class="enter header__enter-btn enter header__enter-btn--desktop">Войти</button>
             <div class="header__basket">22</div>
         </div>
     </div>

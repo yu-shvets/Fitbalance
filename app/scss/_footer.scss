@@ -4,6 +4,25 @@
   &--dark {
     background-color: $clr_grey_dark;
   }
+  &--brighter {
+    background-color: $clr_grey_bright;
+    .footer__top-header {
+      color: $clr_black;
+    }
+    .footer__top-phones-item {
+      color: $clr_black;
+    }
+    .footer__top-phones {
+      background:  center top url(../img/icons/phone-black.svg) no-repeat;
+      background-size: 23px 35px;
+    }
+    .footer__bottom {
+      background-color: $clr_white_darker;
+    }
+    .footer__bottom {
+      color: #8b8b8b;
+    }
+  }
   &__top {
     @include clearfix();
     display: table;
@@ -11,19 +30,51 @@
     padding: 30px 15px 60px;
     max-width: 1375px;
     margin: 0 auto;
+    @media screen and (max-width: 905px) {
+      display: block;
+      text-align: center;
+    }
     &-header {
       font-size: 36px;
       color: $clr_white;
       text-align: center;
       margin-bottom: 25px;
+      @media screen and (max-width: 905px) {
+      }
     }
     &-item {
       display: table-cell;
+      height: 100%;
       &--aside {
         width: 25%;
+        @media screen and (max-width: 905px) {
+          &:first-child {
+            width: 49%;
+            display: inline-block;
+            max-width: 370px;
+            @media screen and (max-width: 520px) {
+              width: 100%;
+            }
+          }
+          &:last-child {
+            width: 100%;
+            display: inline-block;
+            max-width: 370px;
+          }
+        }
       }
       &--center {
         padding: 0 11%;
+        @media screen and (max-width: 905px) {
+          padding: 0 0 0 30px;
+          width: 49%;
+          display: inline-block;
+          max-width: 370px;
+        }
+        @media screen and (max-width: 520px) {
+          width: 100%;
+          padding: 0;
+        }
       }
     }
     &-list {
@@ -31,6 +82,7 @@
       &-item {
         color: $clr_light_grey;
         line-height: 30px;
+        text-align: left;
         a {
           text-decoration: none;
           color: inherit;
@@ -44,7 +96,8 @@
     &-phones {
       float: right;
       padding-top: 45px;
-      background: center top url(../img/icons/footer-phone.png) no-repeat;
+      background:  center top url(../img/icons/phone-white.svg) no-repeat;
+      background-size: 23px 35px;
       position: relative;
       top: -10px;
       &-item {

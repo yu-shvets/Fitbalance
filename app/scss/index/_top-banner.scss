@@ -5,8 +5,11 @@
   background-size:cover;
   text-align: center;
   color: $clr_white;
-  padding-top: 75px;
   position: relative;
+  padding: 75px 15px 0;
+  @media screen and (max-width: 520px) {
+    padding-top: 100px;
+  }
   &__enter-btn {
     position: absolute;
     right: 30px;
@@ -32,14 +35,33 @@
   }
   &__title {
     font-size: 50px;
+    margin-bottom: 10px;
+    @media screen and (max-width: 520px) {
+      font-size: 9vw;
+    }
   }
   &__promo {
     font: 18px PFDintextpro-Medium, sans-serif;
     text-transform: uppercase;
+    @media screen and (max-width: 520px) {
+      font-size: 16px;
+      line-height: 1;
+    }
     &-numb {
       font: 50px PFDinTextCompPro-Light, sans-serif;
       position: relative;
       top: 7px;
+      @media screen and (max-width: 520px) {
+        font-size: 34px;
+        top: 0;
+      }
+      @media screen and (max-width: 520px) {
+        font-size: 30px;
+        top: 0;
+      }
+      &-container {
+        white-space: nowrap;
+      }
     }
     &-perc {
       font: 24px PFDinTextCompPro-Light, sans-serif;

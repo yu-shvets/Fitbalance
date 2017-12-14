@@ -1,0 +1,31 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  font: 16px PFDinTextCompPro-Light, sans-serif;
+  color: $clr_black;
+  line-height: 1.2;
+  display: table;
+  width: 100%;
+}
+main {
+  height: 100%;
+}
+.container {
+  max-width: 1330px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.title {
+  font-size: 50px;
+  color: $clr_black;
+  text-align: center;
+  padding: 30px 0 0;
+}
+
+
+.sub-title {
+  font-size: 30px;
+  text-align: center;
+}
