@@ -296,7 +296,8 @@ main {
   height: 80px;
   background-color: #f8f8f8;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  opacity: 0.99; }
 
 .header__container {
   max-width: 1330px;
@@ -661,7 +662,8 @@ main {
         height: 65px;
         width: 155px;
         display: inline-block;
-        vertical-align: top; }
+        vertical-align: top;
+        white-space: nowrap; }
     .products-list__item-info {
       height: 90px;
       line-height: 90px;
@@ -693,6 +695,230 @@ main {
       text-align: center;
       position: relative;
       top: 10px; }
+
+.product-popup {
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  .product-popup--active {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1); }
+
+.product-cart {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-top: 100px;
+  padding-left: 7%;
+  max-width: 1086px;
+  background-color: #ffffff;
+  z-index: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 100vh; }
+  @media (max-width: 800px) {
+    .product-cart {
+      padding-left: 15px; } }
+  @media (max-width: 500px) {
+    .product-cart {
+      padding-left: 0; } }
+  .product-cart__overlay {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    left: 0;
+    bottom: 0;
+    right: 0; }
+  .product-cart__img {
+    width: 40%;
+    display: table-cell; }
+    @media (max-width: 800px) {
+      .product-cart__img {
+        text-align: center; } }
+    .product-cart__img img {
+      width: 100%;
+      height: 100%; }
+      @media (max-width: 800px) {
+        .product-cart__img img {
+          width: auto;
+          height: auto; } }
+      @media (max-width: 450px) {
+        .product-cart__img img {
+          width: 100%; } }
+    @media (max-width: 800px) {
+      .product-cart__img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 10px; } }
+  .product-cart__row {
+    margin-bottom: 70px; }
+    @media (max-width: 800px) {
+      .product-cart__row {
+        margin: 0 auto 70px; } }
+    .product-cart__row:after {
+      content: "";
+      display: table;
+      clear: both; }
+  .product-cart__btn {
+    position: absolute;
+    left: 32px;
+    top: 23px;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer; }
+    .product-cart__btn::before, .product-cart__btn::after {
+      position: absolute;
+      left: 15px;
+      content: ' ';
+      height: 33px;
+      width: 2px;
+      background-color: #f049a5; }
+    .product-cart__btn:before {
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+      top: 0; }
+    .product-cart__btn:after {
+      -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      top: 0; }
+  .product-cart__container {
+    width: 100%;
+    padding-bottom: 83px; }
+    .product-cart__container:after {
+      content: "";
+      display: table;
+      clear: both; }
+  .product-cart__info {
+    padding-left: 1.8%;
+    width: 48.8%;
+    display: table-cell;
+    vertical-align: top; }
+    @media (max-width: 800px) {
+      .product-cart__info {
+        display: block;
+        width: 100%; } }
+
+.product-info__art {
+  font-size: 14px;
+  font-family: PFDinTextPro-Light; }
+  .product-info__art span {
+    color: #f049a5; }
+
+.product-info__title {
+  font-size: 60px;
+  max-width: 370px;
+  margin-bottom: 15px; }
+
+.product-info__packging {
+  padding-left: 35px;
+  background-image: url(../img/icons/libra.png);
+  background-size: 23px 26px;
+  background-repeat: no-repeat;
+  font: 20px PFDinTextPro-Light, sans-serif;
+  line-height: 33px; }
+
+.product-info__price {
+  font-size: 42px;
+  margin-bottom: 15px;
+  text-indent: 18px;
+  display: inline-block; }
+  .product-info__price--discount {
+    position: relative; }
+    .product-info__price--discount::after {
+      content: '';
+      width: 2px;
+      height: 103px;
+      background-color: #f3564f;
+      -webkit-transform: rotate(-73deg);
+          -ms-transform: rotate(-73deg);
+              transform: rotate(-73deg);
+      display: block;
+      position: absolute;
+      top: -23px;
+      left: 53px; }
+  .product-info__price sub {
+    font-size: 22px;
+    position: relative;
+    top: -15px; }
+
+.product-info__sale-price {
+  margin-left: 18px;
+  display: inline-block;
+  font-size: 72px;
+  position: relative;
+  top: 10px; }
+  .product-info__sale-price sub {
+    font-size: 36px;
+    position: relative;
+    top: -29px; }
+
+@media (max-width: 800px) {
+  .product-info__text {
+    padding-left: 10px; } }
+
+.product-info__text-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+  max-width: 8640px;
+  font-family: PFDinTextPro-Light, sans-serif; }
+
+.product-info__text-list {
+  font-size: 18px;
+  font-family: PFDinTextPro-Light, sans-serif;
+  color: #a5a5a5;
+  line-height: 30px;
+  position: relative; }
+  .product-info__text-list li {
+    position: relative;
+    text-indent: 12px; }
+    .product-info__text-list li::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background-color: #f049a5;
+      position: absolute;
+      left: 0;
+      top: 10px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%; }
+
+.product-info__quantity {
+  white-space: nowrap; }
+
+.products-list__item-quantity--border {
+  border: 1px solid #e1e1e1; }
+
+.product-info__button--pink {
+  width: 196px;
+  height: 67px;
+  text-align: center;
+  display: inline-block;
+  background-color: #f049a5;
+  border: none;
+  -webkit-border-radius: 33px;
+          border-radius: 33px;
+  font-size: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 67px;
+  margin-left: 34px;
+  cursor: pointer;
+  font-family: PFDinTextCompPro-Light, sans-serif; }
 
 .sub-title--about {
   margin-bottom: 40px; }
@@ -929,7 +1155,9 @@ main {
 
 .footer {
   min-height: 310px;
-  display: table-row; }
+  display: table-row;
+  z-index: -1;
+  position: relative; }
   .footer--dark {
     background-color: #323232; }
   .footer--brighter {

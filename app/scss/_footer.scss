@@ -1,6 +1,8 @@
 .footer {
   min-height: 310px;
   display: table-row;
+  z-index: -1;
+  position: relative;
   &--dark {
     background-color: $clr_grey_dark;
   }
