@@ -71,6 +71,9 @@
     margin-left: 10px;
     background-position: center center;
     text-decoration: none;
+    &--pinl {
+      background-image: url(../img/icons/bag-pink.png);
+    }
   }
   &__enter-btn {
     width: 90px;

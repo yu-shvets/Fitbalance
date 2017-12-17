@@ -95,7 +95,6 @@
 }
 .products-list {
   vertical-align: middle;
-  text-align: justify;
   &::after {
     content: '';
     display: inline-block;
@@ -104,7 +103,7 @@
   &__item {
     border: 1px solid $clr_grey_brighter;
     width: 30.77%;
-    margin-right: 2.2%;
+    margin-right: 3.4%;
     display: inline-block;
     margin-bottom: 20px;
     &:nth-child(3n+3) {
@@ -202,7 +201,7 @@
         sup {
           font-size: 24px;
           position: relative;
-          top: -13px;
+          top: -19px;
         }
       }
       &-left {

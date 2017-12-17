@@ -3,7 +3,7 @@
   @include clearfix();
   &-item {
     height: 550px;
-    width: 33.33%;
+    width: 50%;
     background-repeat: no-repeat;
     background-position: top center;
     float: left;
@@ -58,6 +58,10 @@
       display: inline-block;
       margin-top: 40px;
       transition: all 0.5s ease;
+      &--pink {
+        color: $clr_pink;
+        border-color:  $clr_pink;
+      }
     }
   }
 }

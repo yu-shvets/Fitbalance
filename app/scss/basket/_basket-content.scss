@@ -71,6 +71,12 @@
   vertical-align: middle;
   border: 1px solid $clr_grey_brighter;
   border-bottom: none;
+  transition: all 0.5s ease;
+  opacity: 1;
+  &--hidden {
+    transform: scale(0);
+    opacity: 0;
+  }
   @media screen and (max-width: 600px) {
     display: block;
     height: auto;
@@ -157,7 +163,16 @@
     }
   }
 }
-
+.empty-basket {
+  min-height: 60vh;
+  display: table;
+  width: 100%;
+  text-align: center;
+  &__container {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
 .product-cart__btn--basket {
   position: relative;
   top: 0;

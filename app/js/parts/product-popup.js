@@ -10,7 +10,6 @@
             body.classList.remove("no-scroll");
         });
         for (var w = 0; w < productName.length; w++) {
-            console.log(w);
             productName[w].addEventListener("click", function (e) {
                 e.preventDefault();
                 popup.classList.add("product-popup--active");
@@ -34,7 +33,7 @@
     //         }
     //     }
     // };
-    //
+    //var info = JSON.stringify(data);
     // req.open('POST', "link_here", true);
     // req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     // req.send(info);

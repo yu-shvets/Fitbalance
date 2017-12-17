@@ -225,7 +225,7 @@ main {
     clear: both; }
   .products-row-item {
     height: 550px;
-    width: 33.33%;
+    width: 50%;
     background-repeat: no-repeat;
     background-position: top center;
     float: left;
@@ -278,6 +278,9 @@ main {
       margin-top: 40px;
       -webkit-transition: all 0.5s ease;
       transition: all 0.5s ease; }
+      .products-row-item__btn--pink {
+        color: #f049a5;
+        border-color: #f049a5; }
 
 .info-block {
   font-size: 18px;
@@ -370,6 +373,8 @@ main {
   margin-left: 10px;
   background-position: center center;
   text-decoration: none; }
+  .header__basket--pinl {
+    background-image: url(../img/icons/bag-pink.png); }
 
 .header__enter-btn {
   width: 90px;
@@ -552,8 +557,7 @@ main {
   text-align: center; }
 
 .products-list {
-  vertical-align: middle;
-  text-align: justify; }
+  vertical-align: middle; }
   .products-list::after {
     content: '';
     display: inline-block;
@@ -561,7 +565,7 @@ main {
   .products-list__item {
     border: 1px solid #e1e1e1;
     width: 30.77%;
-    margin-right: 2.2%;
+    margin-right: 3.4%;
     display: inline-block;
     margin-bottom: 20px; }
     .products-list__item:nth-child(3n+3) {
@@ -657,7 +661,7 @@ main {
         .products-list__item-price-value sup {
           font-size: 24px;
           position: relative;
-          top: -13px; }
+          top: -19px; }
       .products-list__item-price-left {
         float: right;
         background-color: #f8f8f8;
@@ -712,14 +716,14 @@ main {
   right: 0;
   top: 0;
   width: 100%;
-  height: 100%;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
+  height: 100%; }
   .product-popup--active {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1);
-    z-index: 1; }
+    z-index: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
 
 .product-cart {
   position: absolute;
@@ -1063,19 +1067,24 @@ main {
     text-indent: 20px; }
     .form__row-field.placeholder {
       color: #353535;
-      font: 20px PFDinTextPro-Light, sans-serif; }
+      font: 20px PFDinTextPro-Light, sans-serif;
+      line-height: 70px; }
     .form__row-field:-moz-placeholder {
       color: #353535;
-      font: 20px PFDinTextPro-Light, sans-serif; }
+      font: 20px PFDinTextPro-Light, sans-serif;
+      line-height: 70px; }
     .form__row-field::-moz-placeholder {
       color: #353535;
-      font: 20px PFDinTextPro-Light, sans-serif; }
+      font: 20px PFDinTextPro-Light, sans-serif;
+      line-height: 70px; }
     .form__row-field:-ms-input-placeholder {
       color: #353535;
-      font: 20px PFDinTextPro-Light, sans-serif; }
+      font: 20px PFDinTextPro-Light, sans-serif;
+      line-height: 70px; }
     .form__row-field::-webkit-input-placeholder {
       color: #353535;
-      font: 20px PFDinTextPro-Light, sans-serif; }
+      font: 20px PFDinTextPro-Light, sans-serif;
+      line-height: 70px; }
 
 .form__payment {
   cursor: pointer;
@@ -1236,7 +1245,15 @@ main {
   display: table;
   vertical-align: middle;
   border: 1px solid #e1e1e1;
-  border-bottom: none; }
+  border-bottom: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 1; }
+  .basket-row--hidden {
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    opacity: 0; }
   @media screen and (max-width: 600px) {
     .basket-row {
       display: block;
@@ -1311,6 +1328,15 @@ main {
       font-size: 50%;
       position: relative;
       top: -15px; }
+
+.empty-basket {
+  min-height: 60vh;
+  display: table;
+  width: 100%;
+  text-align: center; }
+  .empty-basket__container {
+    display: table-cell;
+    vertical-align: middle; }
 
 .product-cart__btn--basket {
   position: relative;
