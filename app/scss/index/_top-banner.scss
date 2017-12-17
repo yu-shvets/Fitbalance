@@ -28,6 +28,7 @@
     border-radius: 19px;
     cursor: pointer;
     @include clearfix();
+    text-decoration: none;
   }
   &__logo {
     width: 100%;
@@ -82,6 +83,7 @@
     font-family: inherit;
     margin-top: 25px;
     transition: all 0.5s ease;
+    text-decoration: none;
     &:hover {
       background-color: transparent;
       border: 2px solid $clr_white;

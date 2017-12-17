@@ -157,7 +157,8 @@ main {
     color: inherit;
     -webkit-border-radius: 19px;
             border-radius: 19px;
-    cursor: pointer; }
+    cursor: pointer;
+    text-decoration: none; }
     .top-banner__enter-btn:after {
       content: "";
       display: table;
@@ -210,7 +211,8 @@ main {
     font-family: inherit;
     margin-top: 25px;
     -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease; }
+    transition: all 0.5s ease;
+    text-decoration: none; }
     .top-banner__btn:hover {
       background-color: transparent;
       border: 2px solid #ffffff; }
@@ -302,9 +304,9 @@ main {
   width: 100%;
   text-align: center;
   position: relative; }
-  @media (max-width: 800px) {
-    .header-main {
-      z-index: 2; } }
+
+.header--prior {
+  z-index: 2; }
 
 .header__container {
   max-width: 1330px;
@@ -366,12 +368,12 @@ main {
   vertical-align: middle;
   background-repeat: no-repeat;
   margin-left: 10px;
-  background-position: center center; }
+  background-position: center center;
+  text-decoration: none; }
 
 .header__enter-btn {
   width: 90px;
   height: 40px;
-  line-height: 33px;
   display: inline-block;
   border: 1px solid #f049a5;
   padding-left: 33px;
@@ -385,15 +387,12 @@ main {
           border-radius: 19px;
   font: 18px PFDinTextPro-Light, sans-serif;
   cursor: pointer; }
-  .header__enter-btn:after {
-    content: "";
-    display: table;
-    clear: both; }
   .header__enter-btn--mobile {
     display: none; }
     @media (max-width: 800px) {
       .header__enter-btn--mobile {
-        display: inline-block; } }
+        display: inline-block;
+        line-height: 40px; } }
   @media (max-width: 800px) {
     .header__enter-btn--desktop {
       display: none; } }
@@ -429,7 +428,8 @@ main {
   z-index: 700;
   display: none;
   position: relative;
-  top: 4px; }
+  top: 4px;
+  z-index: 0; }
   @media (max-width: 800px) {
     .hamburger {
       display: inline-block;
@@ -718,7 +718,8 @@ main {
   .product-popup--active {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
-            transform: scale(1); }
+            transform: scale(1);
+    z-index: 1; }
 
 .product-cart {
   position: absolute;
