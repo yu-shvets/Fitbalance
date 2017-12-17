@@ -29,3 +29,8 @@ main {
   font-size: 30px;
   text-align: center;
 }
+
+main {
+  z-index: 1;
+  position: relative;
+}
