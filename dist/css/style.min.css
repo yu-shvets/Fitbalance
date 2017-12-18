@@ -739,11 +739,15 @@ main {
   padding-top: 100px;
   padding-left: 7%;
   max-width: 1086px;
+  width: 100%;
   background-color: #ffffff;
   z-index: 1;
   overflow-x: hidden;
   overflow-y: auto;
   max-height: 100vh; }
+  .product-cart--carpatu {
+    padding-top: 70px;
+    padding-left: 3%; }
   @media screen and (max-width: 400px) {
     .product-cart {
       position: relative; } }
@@ -765,6 +769,8 @@ main {
   .product-cart__img {
     width: 40%;
     display: table-cell; }
+    .product-cart__img--carpatu {
+      width: 55%; }
     @media (max-width: 800px) {
       .product-cart__img {
         text-align: center; } }
@@ -809,6 +815,8 @@ main {
       height: 33px;
       width: 2px;
       background-color: #f049a5; }
+    .product-cart__btn--red::before, .product-cart__btn--red::after {
+      background-color: #ca032d; }
     .product-cart__btn:before {
       -webkit-transform: rotate(45deg);
           -ms-transform: rotate(45deg);
@@ -836,9 +844,18 @@ main {
         display: block;
         width: 100%; } }
 
+.product-info--carpatu {
+  width: 45%;
+  padding-left: 3%; }
+  @media (max-width: 1100px) {
+    .product-info--carpatu {
+      padding-left: 1%; } }
+  @media (max-width: 800px) {
+    .product-info--carpatu {
+      width: 100%; } }
+
 .product-info__art {
-  font-size: 14px;
-  font-family: PFDinTextPro-Light; }
+  font: 14px PFDinTextPro-Light, sans-serif; }
   .product-info__art span {
     color: #f049a5; }
 
@@ -846,6 +863,11 @@ main {
   font-size: 60px;
   max-width: 370px;
   margin-bottom: 15px; }
+  .product-info__title--carpatu {
+    font-size: 40px; }
+    @media screen and (max-width: 900px) {
+      .product-info__title--carpatu {
+        font-size: 32px; } }
   @media screen and (max-width: 600px) {
     .product-info__title {
       font-size: 32px;
@@ -864,6 +886,39 @@ main {
   margin-bottom: 15px;
   text-indent: 18px;
   display: inline-block; }
+  .product-info__price-row {
+    white-space: nowrap;
+    font-size: 0; }
+    .product-info__price-row:before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 0;
+      height: 100%; }
+    .product-info__price-row div {
+      display: inline-block;
+      vertical-align: middle; }
+    .product-info__price-row .product-info__sale-price {
+      top: 0; }
+    @media (max-width: 1100px) {
+      .product-info__price-row .product-info__price {
+        font-size: 40px; }
+      .product-info__price-row .product-info__sale-price {
+        font-size: 50px;
+        padding-left: 20px; } }
+  @media (max-width: 1100px) and (max-width: 800px) {
+    .product-info__price-row .product-info__sale-price {
+      position: static; } }
+    @media (max-width: 1100px) {
+        .product-info__price-row .product-info__sale-price sub {
+          top: -20px; } }
+    @media (max-width: 340px) {
+      .product-info__price-row .product-info__price {
+        font-size: 32px; }
+      .product-info__price-row .product-info__sale-price {
+        font-size: 40px; }
+        .product-info__price-row .product-info__sale-price sub {
+          top: -20px; } }
   .product-info__price--discount {
     position: relative; }
     .product-info__price--discount::after {
@@ -890,7 +945,7 @@ main {
   position: relative;
   top: 10px; }
   .product-info__sale-price sub {
-    font-size: 36px;
+    font-size: 50%;
     position: relative;
     top: -29px; }
 
@@ -927,8 +982,70 @@ main {
       -webkit-border-radius: 50%;
               border-radius: 50%; }
 
+.product-info__text--carpatu {
+  width: 100%;
+  max-width: 630px;
+  margin: 0 auto; }
+  .product-info__text--carpatu .product-info__text-title {
+    text-align: center; }
+  .product-info__text--carpatu .product-info__text-list {
+    margin-bottom: 40px; }
+
 .product-info__quantity {
   white-space: nowrap; }
+
+.product-info__conditions {
+  font: 20px PFDinTextPro-Light, san-serif;
+  text-indent: 35px;
+  background: url(../img/icons/house.png) no-repeat;
+  background-position: 4px top;
+  min-height: 28px;
+  line-height: 28px;
+  margin-bottom: 30px; }
+  @media screen and (max-width: 900px) {
+    .product-info__conditions {
+      font-size: 18px; } }
+
+.product-info__people {
+  font: 20px PFDinTextPro-Light, san-serif;
+  padding-left: 35px;
+  background: url(../img/icons/person-shale.png) no-repeat;
+  background-position: 4px top;
+  min-height: 28px;
+  line-height: 28px;
+  max-width: 350px; }
+  @media screen and (max-width: 900px) {
+    .product-info__people {
+      font-size: 18px; } }
+
+.product-info__attention {
+  color: #ca032d;
+  font: 14px PFDinTextPro-Light, sans-serif;
+  margin: 0 10px; }
+
+.product-info__order-btn {
+  width: 239px;
+  height: 65px;
+  line-height: 65px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: inherit;
+  background-color: #ca032d;
+  text-align: center;
+  border: none;
+  -webkit-border-radius: 33px;
+          border-radius: 33px;
+  margin-top: 6px;
+  cursor: pointer; }
+
+.product-info__photo-item {
+  width: 100%;
+  margin-bottom: 30px; }
+  .product-info__photo-item img {
+    width: 100%; }
+  .product-info__photo-item:last-child {
+    margin-bottom: 0; }
 
 .products-list__item-quantity--border {
   border: 1px solid #e1e1e1; }

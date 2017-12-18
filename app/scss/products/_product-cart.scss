@@ -19,11 +19,16 @@
   padding-top: 100px;
   padding-left: 7%;
   max-width: 1086px;
+  width: 100%;
   background-color: $clr_white;
   z-index: 1;
   overflow-x: hidden;
   overflow-y: auto;
   max-height: 100vh;
+  &--carpatu {
+    padding-top: 70px;;
+    padding-left: 3%;
+  }
   @media screen and (max-width: 400px) {
     position: relative;
   }
@@ -36,7 +41,7 @@
   &__overlay {
     content: '';
     width: 100%;
-    height:100%;
+    height: 100%;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.2);
     left: 0;
@@ -46,6 +51,9 @@
   &__img {
     width: 40%;
     display: table-cell;
+    &--carpatu {
+      width: 55%;
+    }
     @media (max-width: 800px) {
       text-align: center;
     }
@@ -91,6 +99,11 @@
       width: 2px;
       background-color: $clr_pink;
     }
+    &--red {
+      &::before, &::after {
+        background-color: $clr_main_red;
+      }
+    }
     &:before {
       transform: rotate(45deg);
       top: 0;
@@ -104,7 +117,7 @@
   &__container {
     width: 100%;
     padding-bottom: 83px;
-    @include  clearfix();
+    @include clearfix();
   }
   &__info {
     padding-left: 1.8%;
@@ -117,10 +130,20 @@
     }
   }
 }
+
 .product-info {
+  &--carpatu {
+    width: 45%;
+    padding-left: 3%;
+    @media (max-width: 1100px) {
+      padding-left: 1%;
+    }
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+  }
   &__art {
-    font-size: 14px;
-    font-family: PFDinTextPro-Light;;
+    font: 14px PFDinTextPro-Light, sans-serif;
     span {
       color: $clr_pink;
     }
@@ -129,6 +152,12 @@
     font-size: 60px;
     max-width: 370px;
     margin-bottom: 15px;
+    &--carpatu {
+      font-size: 40px;
+      @media screen and (max-width: 900px) {
+        font-size: 32px;
+      }
+    }
     @media screen and (max-width: 600px) {
       font-size: 32px;
       max-width: none;
@@ -147,6 +176,50 @@
     margin-bottom: 15px;
     text-indent: 18px;
     display: inline-block;
+    &-row {
+      white-space: nowrap;
+      font-size: 0;
+      &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 0;
+        height: 100%;
+      }
+      div {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .product-info__sale-price {
+        top: 0;
+      }
+      @media (max-width: 1100px) {
+        .product-info__price {
+          font-size: 40px;
+        }
+        .product-info__sale-price {
+          font-size: 50px;
+          padding-left: 20px;
+          @media (max-width: 800px) {
+            position: static;
+          }
+          sub {
+            top: -20px;
+          }
+        }
+      }
+      @media (max-width: 340px) {
+        .product-info__price {
+          font-size: 32px;
+        }
+        .product-info__sale-price {
+          font-size: 40px;
+          sub {
+            top: -20px;
+          }
+        }
+      }
+    }
     &--discount {
       position: relative;
       &::after {
@@ -175,7 +248,7 @@
     position: relative;
     top: 10px;
     sub {
-      font-size: 36px;
+      font-size: 50%;
       position: relative;
       top: -29px;
     }
@@ -210,8 +283,19 @@
           position: absolute;
           left: 0;
           top: 10px;
-          border-radius:  50%;
+          border-radius: 50%;
         }
+      }
+    }
+    &--carpatu {
+      width: 100%;
+      max-width: 630px;
+      margin: 0 auto;
+      .product-info__text-title {
+        text-align: center;
+      }
+      .product-info__text-list {
+        margin-bottom: 40px;
       }
     }
   }
@@ -219,10 +303,68 @@
     white-space: nowrap;
 
   }
+  &__conditions {
+    font: 20px PFDinTextPro-Light, san-serif;
+    text-indent: 35px;
+    background: url(../img/icons/house.png) no-repeat;
+    background-position: 4px top;
+    min-height: 28px;
+    line-height: 28px;
+    margin-bottom: 30px;
+    @media screen and (max-width: 900px) {
+      font-size: 18px;
+    }
+  }
+  &__people {
+    font: 20px PFDinTextPro-Light, san-serif;
+    padding-left: 35px;
+    background: url(../img/icons/person-shale.png) no-repeat;
+    background-position: 4px top;
+    min-height: 28px;
+    line-height: 28px;
+    max-width: 350px;
+    @media screen and (max-width: 900px) {
+      font-size: 18px;
+    }
+  }
+  &__attention {
+    color: $clr_main_red;
+    font: 14px PFDinTextPro-Light, sans-serif;
+    margin: 0 10px;
+  }
+  &__order-btn {
+    width: 239px;
+    height: 65px;
+    line-height: 65px;
+    color: $clr_white;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: inherit;
+    background-color: $clr_main_red;
+    text-align: center;
+    border: none;
+    border-radius: 33px;
+    margin-top: 6px;
+    cursor: pointer;
+  }
+  &__photo {
+    &-item {
+      width: 100%;
+      margin-bottom: 30px;
+      img {
+        width: 100%;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
+
 .products-list__item-quantity--border {
   border: 1px solid $clr_grey_brighter;
 }
+
 .product-info__button--pink {
   width: 196px;
   height: 67px;
