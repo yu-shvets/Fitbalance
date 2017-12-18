@@ -39,6 +39,9 @@
         transition: all 0.5s ease;
       }
     }
+    &--red a::after {
+       background-color: $clr_main_red;
+     }
     &--active a::after  {
       height: 3px;
     }

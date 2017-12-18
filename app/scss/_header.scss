@@ -33,6 +33,11 @@
     img {
       width: 164px;
     }
+    &--carpatu {
+      img {
+        width: 60px;
+      }
+    }
   }
   &__right {
     position: absolute;
@@ -97,6 +102,9 @@
         line-height: 40px;
       }
     }
+    &--red {
+      border: 1px solid $clr_main_red;
+    }
     &--desktop {
       @media (max-width: 800px) {
         display: none;
@@ -114,6 +122,11 @@
     transition: color 0.5s ease;
     &:hover {
       color: $clr_red;
+    }
+    &--red {
+      &:hover {
+        color: $clr_main_red;
+      }
     }
     &:last-child {
       margin-right: 0;
@@ -137,7 +150,6 @@
 .hamburger {
   cursor: pointer;
   transform: rotateY(180deg);
-  z-index: 700;
   display: none;
   position: relative;
   top: 4px;
@@ -151,6 +163,9 @@
     display: block;
     width: 35px;
     transition: margin 0.5s, transform 0.5s;
+    &--red {
+      border-top: 3px solid $clr_main_red;;
+    }
     &:nth-child(2) {
       margin: 5px 0;
     }
@@ -158,8 +173,7 @@
   &--open {
     z-index: 800;
     top: -8px;
-    .hamburger__bars{
-      border-top: 3px solid $clr_red;
+    .hamburger__bars {
       &:nth-child(1) {
         transform: rotate(45deg);
       }
