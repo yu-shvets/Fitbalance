@@ -13,7 +13,6 @@
             i = 0;
         if (elements) {
             if (resize === true) {
-                console.log("this is true")
                 for (i = 0; i < elements.length; i++) {
                     elements[i].style.height = 'auto';
                 }
