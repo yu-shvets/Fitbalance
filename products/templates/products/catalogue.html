@@ -1,0 +1,18 @@
+{% extends 'products/index.html' %}
+
+    {% block content %}
+
+        {% for category in categories %}
+            <span style="font-size: 22px; margin-right: 10px">{{ category.title }}</span>
+        {% endfor %}
+
+        {% for product in object_list %}
+            <p><a href="{% url 'product' product.pk %}"><img src="{{ product.title_image.url }}"></a></p>
+            <p>{{ product.category }} {{ product.title }}</p>
+            <p>{{ product.weight }} г</p>
+            <p>{{ product.price }} грн</p>
+
+            <p><a class="btn btn-primary" href="{% url 'add_to_cart' product.pk %}" role="button">Добавить в корзину</a></p>
+        {% endfor %}
+
+    {% endblock content %}

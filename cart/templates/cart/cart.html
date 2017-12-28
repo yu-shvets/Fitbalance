@@ -1,0 +1,43 @@
+{% extends 'products/index.html' %}
+{% load widget_tweaks %}
+
+{% block content %}
+
+     {% for product in cart %}
+
+            <p><img src={{ product.product.title_image.url }} /></p>
+
+            <p>{{ product.product.category }} {{ product.product.title }}</p>
+            <p>Цена: {{ product.price }}</p>
+
+         <form method="post" action="{% url 'cart_update'  product.product.pk %}" class="update" id="form-{{ product.product.id }}">
+            {% csrf_token %}
+
+            <input name="new_quantity" class="cart__table-result update_q" type="number" value="{{ product.quantity }}">
+
+         </form>
+
+            <p>Сумма: <span id="sum-{{ product.product.id }}">{{ product.total_price }}</span></p>
+
+         <a class="btn btn-primary" href="{% url 'cart_remove' product.product.pk %}" role="button">Удалить</a>
+
+         <br>
+        {% empty %}
+            Корзина пуста.
+        {% endfor %}
+        <hr>
+
+        {% if cart.get_total_price %}
+
+        <h4>Итого к оплате: <span id="total_price">{{ total_price }}</span></h4>
+
+        <a class="btn btn-primary" href="{% url 'order' %}" role="button">Оформить заказ</a>
+
+        {% endif %}
+
+{% endblock content %}
+
+
+
+
+

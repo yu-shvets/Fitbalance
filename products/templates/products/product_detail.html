@@ -1,0 +1,14 @@
+{% extends 'products/index.html' %}
+
+    {% block content %}
+
+
+            <p><img src="{{ product.title_image.url }}"></p>
+            <p>{{ product.category }} {{ product.title }}</p>
+            <p>{{ product.weight }} г</p>
+            <p>{{ product.price }} грн</p>
+
+            <p><a class="btn btn-primary" href="{% url 'add_to_cart' product.pk %}" role="button">Добавить в корзину</a></p>
+
+    {% endblock content %}
+

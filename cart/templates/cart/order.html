@@ -1,0 +1,23 @@
+{% extends 'products/index.html' %}
+
+{% block content %}
+
+    {% for product in cart %}
+
+            <p>{{ product.item.title }}</p>
+            <p>Цена: {{ product.price }}</p>
+            <p>Количество: {{ product.quantity }}</p>
+
+    {% endfor %}
+
+    <h4>Итого к оплате: {{ cart.get_total_price }}</h4>
+
+    <hr>
+
+    <form method="post" action="{% url 'new_order' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+        <input type="submit" value="Подтвердить" class="btn"/>
+        </form>
+
+{% endblock content %}
