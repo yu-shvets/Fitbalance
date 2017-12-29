@@ -1,0 +1,143 @@
+.contacts {
+  margin-bottom:60px;
+  &__left {
+    width:50%;
+    float:left;   
+    padding-right:60px;
+  }
+  &__right {
+    padding-left:60px;
+    width:50%;
+    float:left;
+  }
+  &__title {
+    font-size:36px;
+    color:$clr_black;
+    padding-bottom:20px;
+    &_main {
+      margin-top:38px;
+    }
+  }
+  &__text {
+    font-size:18px;
+    color:$clr_light_grey;
+    font-family: PFDinTextPro-Light;
+    &_space {
+      margin-top:33px;
+    }
+  }
+  padding-top:50px;
+  &__tel {
+    font-size: 40px;
+    color:$clr_black;
+    text-decoration:none;
+    display:inline-block;
+    position:relative;
+    padding-left:70px;
+    transition:all .4s;
+    &:before {
+      content: '';
+      position:absolute;
+      width:23px;
+      height:36px;
+      background-repeat:no-repeat;
+      background-image:url('../../img/icons/contacts-tel.png');
+      left:0;
+      top:0;
+      bottom:0;
+      margin:auto;
+    }
+    &:hover, &:focus {
+      text-decoration: none;
+      color:$clr_main_red;
+    }
+  }
+  &__alarm {
+    border-left:5px solid $clr_main_red;
+    padding-left:15px;
+    margin-top:30px;
+    &-title {
+      font-family: PFDinTextPro-Medium;
+      font-size:30px;
+    }
+    &-description {
+      font-family: PFDinTextPro-Light;
+      font-size: 18px;
+      color: $clr_light_grey;
+      margin-top:5px;
+    }
+  }
+  &__form {
+    padding: 30px 25px;
+    border: 2px solid #efefef;
+    margin-top:38px;
+  }
+  &__field {
+    border:1px solid #e1e1e1;
+    line-height: 71px;
+    color:$clr_black;
+    font-family: PFDinTextPro-Light;
+    font-size:18px;
+    display:block;
+    width:100%;
+    text-indent:27px;
+    &::placeholder {
+      font-family: PFDinTextPro-Light;
+      font-size:18px;
+      color:$clr_black;
+    }
+    &:nth-child(2) {
+      margin-top:25px;
+    }
+  }
+  &__btn {
+    border:none;
+    outline:none;
+    margin:0 auto;
+    width:100%;
+    border-radius:50px;
+    margin-top:25px;
+    padding-top:20px;
+    padding-bottom:20px;
+    background-color:$clr_main_red;
+    font-family: PFDinTextCompPro-Light;
+    color: #fefefe;
+    transition: all .5s;
+    border:1px solid transparent;
+    cursor:pointer;
+    font-size:30px;
+    &:hover {
+      background-color:transparent;
+      color: $clr_black;
+      border:1px solid $clr_main_red;
+    }
+  }
+}
+
+#map {
+  height:392px;
+  width:100%;
+}
+
+@media (max-width:767px) {
+  .contacts {
+    &__left, &__right {
+      width:100%;
+      padding:0;
+    }
+    &__right {
+      margin-top:15px;
+    }
+    &__tel {
+      padding-left:30px;
+    }
+    &__field {
+      line-height:50px;
+    }
+    &__btn {
+      padding-top:15px;
+      padding-bottom:15px;
+      font-size:20px;
+    }
+  }
+}

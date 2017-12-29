@@ -34,3 +34,8 @@ main {
   z-index: 1;
   position: relative;
 }
+
+.clearfix {
+  float:none;
+  clear:both;
+}

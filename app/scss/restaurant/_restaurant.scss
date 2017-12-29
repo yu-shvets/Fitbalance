@@ -1,0 +1,63 @@
+.restaurant {
+  padding-bottom:45px;
+  &__single {
+    float:left;
+    padding-left:30px;
+    padding-right:30px;
+    width:50%;
+    margin-top:47px;
+    &:hover,&:focus,&:link {
+      text-decoration: none;
+    }
+  }
+  &__img {
+    width:250px;
+    height:250px;
+    background-position:center center;
+    background-size:cover;
+    border-radius:50%;
+    float:left;
+    margin-right:15px;
+  }
+  &__body {
+    height:250px;
+    overflow:hidden;
+  }
+  &__information {
+    display:flex;
+    &-main {
+      width:calc(100% - 105px);
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-right:8px;
+    }
+  }
+  &__title {
+    font-size:36px;
+    color:$clr_black;
+    margin-right:5px;
+  }
+  &__weight {
+    text-align: right;
+    border-bottom:1px solid #ccc;
+    width:100%;
+    padding-top:7px;
+    padding-right:5px;
+    color: #747474;
+  }
+  &__price {
+    font-size:24px;
+    color:$clr_black;
+    white-space:nowrap;
+    span {
+      font-size:36px;
+    }
+  }
+  &__description {
+    font-size:18px;
+    font-family: PFDinTextPro-Regular;
+    color: $clr_light_grey;
+    padding-top:17px;
+  }
+}
